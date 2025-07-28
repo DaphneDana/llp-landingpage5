@@ -42,54 +42,81 @@ const ServicesPage = () => {
       <header className="bg-white shadow-sm relative z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
+            {/* Logo */}
             <div className="flex-shrink-0">
-              <div className="text-2xl font-bold text-black">
+              <a 
+                href="/"
+                className="text-2xl font-bold text-black hover:opacity-80 transition-opacity"
+              >
                 <span className="bg-black text-white px-2 py-1 mr-1">AEGIS</span>
                 <span className="text-sm">LLP</span>
-              </div>
+              </a>
             </div>
 
+            {/* Navigation */}
             <nav className="hidden md:flex space-x-8">
-              <a href="#" className="text-gray-700 hover:text-blue-600 font-medium">
+              <a 
+                href="/"
+                className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
+              >
                 ホーム
                 <div className="text-xs text-gray-500">Home</div>
               </a>
-              <a href="#" className="text-gray-700 hover:text-blue-600 font-medium border-b-2 border-blue-600">
+              <a 
+                href="/services"
+                className="text-blue-600 font-medium transition-colors relative"
+              >
                 私たちのサービス
-                <div className="text-xs text-blue-600">Service</div>
+                <div className="text-xs text-blue-500">Service</div>
+                <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-blue-600"></div>
               </a>
-              <a href="#" className="text-gray-700 hover:text-blue-600 font-medium">
+              <a 
+                href="/projects"
+                className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
+              >
                 実績
-                <div className="text-xs text-gray-500">Works</div>
+                <div className="text-xs text-gray-500">Projects</div>
               </a>
-              <a href="#" className="text-gray-700 hover:text-blue-600 font-medium">
+              <a 
+                href="/careers"
+                className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
+              >
                 採用情報
-                <div className="text-xs text-gray-500">Recruit</div>
+                <div className="text-xs text-gray-500">Careers</div>
               </a>
-              <a href="#" className="text-gray-700 hover:text-blue-600 font-medium">
+              <a 
+                href="/about"
+                className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
+              >
                 会社概要
-                <div className="text-xs text-gray-500">Company</div>
+                <div className="text-xs text-gray-500">About</div>
               </a>
-              <a href="#" className="text-gray-700 hover:text-blue-600 font-medium">
+              <a 
+                href="/contact"
+                className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
+              >
                 お問い合わせ
                 <div className="text-xs text-gray-500">Contact</div>
               </a>
             </nav>
 
+            {/* Contact Info and Entry Button */}
             <div className="flex items-center space-x-4">
               <div className="hidden lg:block text-right">
                 <div className="text-lg font-bold text-gray-900">TEL.03-1234-5678</div>
                 <div className="text-xs text-gray-600">【受付時間】9:00～17:00</div>
               </div>
-              <button className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded font-medium flex items-center space-x-2">
+              <a 
+                href="/contact"
+                className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded font-medium flex items-center space-x-2 transition-colors"
+              >
                 <span>ENTRY</span>
                 <span>→</span>
-              </button>
+              </a>
             </div>
           </div>
         </div>
       </header>
-
       {/* Hero Section */}
       <section id="services-hero-section" className="relative h-screen overflow-hidden">
         <div className="absolute inset-0">
@@ -238,7 +265,6 @@ const ServicesPage = () => {
                       alt="電気設備事業"
                       className="w-full h-full object-cover rounded-lg"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-blue-900/70 to-transparent rounded-lg"></div>
                   </div>
                   
                   <div className="bg-blue-600 text-white p-6 rounded-lg relative -mt-20 mx-6 z-10 shadow-xl">
@@ -302,7 +328,6 @@ const ServicesPage = () => {
                       alt="制御・計装設備事業"
                       className="w-full h-full object-cover rounded-lg"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-blue-900/70 to-transparent rounded-lg"></div>
                   </div>
                   
                   <div className="bg-blue-600 text-white p-6 rounded-lg relative -mt-20 mx-6 z-10 shadow-xl">
@@ -332,7 +357,6 @@ const ServicesPage = () => {
                       alt="空調設備事業"
                       className="w-full h-full object-cover rounded-lg"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-blue-900/70 to-transparent rounded-lg"></div>
                   </div>
                   
                   <div className="bg-blue-600 text-white p-6 rounded-lg relative -mt-20 mx-6 z-10 shadow-xl">
@@ -396,7 +420,6 @@ const ServicesPage = () => {
                       alt="コンサルティング・サポート"
                       className="w-full h-full object-cover rounded-lg"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-blue-900/70 to-transparent rounded-lg"></div>
                   </div>
                   
                   <div className="bg-blue-600 text-white p-6 rounded-lg relative -mt-20 mx-6 z-10 shadow-xl">

@@ -62,49 +62,76 @@ const ContactPage = () => {
       <header className="bg-white shadow-sm relative z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
+            {/* Logo */}
             <div className="flex-shrink-0">
-              <div className="text-2xl font-bold text-black">
+              <a 
+                href="/"
+                className="text-2xl font-bold text-black hover:opacity-80 transition-opacity"
+              >
                 <span className="bg-black text-white px-2 py-1 mr-1">AEGIS</span>
                 <span className="text-sm">LLP</span>
-              </div>
+              </a>
             </div>
 
+            {/* Navigation */}
             <nav className="hidden md:flex space-x-8">
-              <a href="#" className="text-gray-700 hover:text-blue-600 font-medium">
+              <a 
+                href="/"
+                className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
+              >
                 ホーム
                 <div className="text-xs text-gray-500">Home</div>
               </a>
-              <a href="#" className="text-gray-700 hover:text-blue-600 font-medium">
+              <a 
+                href="/services"
+                className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
+              >
                 私たちのサービス
                 <div className="text-xs text-gray-500">Service</div>
               </a>
-              <a href="#" className="text-gray-700 hover:text-blue-600 font-medium">
+              <a 
+                href="/projects"
+                className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
+              >
                 実績
-                <div className="text-xs text-gray-500">Works</div>
+                <div className="text-xs text-gray-500">Projects</div>
               </a>
-              <a href="#" className="text-gray-700 hover:text-blue-600 font-medium">
+              <a 
+                href="/careers"
+                className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
+              >
                 採用情報
-                <div className="text-xs text-gray-500">Recruit</div>
+                <div className="text-xs text-gray-500">Careers</div>
               </a>
-              <a href="#" className="text-gray-700 hover:text-blue-600 font-medium">
+              <a 
+                href="/about"
+                className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
+              >
                 会社概要
-                <div className="text-xs text-gray-500">Company</div>
+                <div className="text-xs text-gray-500">About</div>
               </a>
-              <a href="#" className="text-gray-700 hover:text-blue-600 font-medium border-b-2 border-blue-600">
+              <a 
+                href="/contact"
+                className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
+              >
                 お問い合わせ
-                <div className="text-xs text-blue-600">Contact</div>
+                <div className="text-xs text-gray-500">Contact</div>
               </a>
             </nav>
 
+            {/* Contact Info and Entry Button */}
             <div className="flex items-center space-x-4">
               <div className="hidden lg:block text-right">
                 <div className="text-lg font-bold text-gray-900">TEL.03-1234-5678</div>
                 <div className="text-xs text-gray-600">【受付時間】9:00～17:00</div>
               </div>
-              <button className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded font-medium flex items-center space-x-2">
+              <a 
+                href="/contact"
+                className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded font-medium flex items-center space-x-2 transition-colors"
+              >
                 <span>ENTRY</span>
                 <span>→</span>
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -202,7 +229,7 @@ const ContactPage = () => {
                 <div className="w-full flex-shrink-0">
                   <div className="flex items-center space-x-2">
                     <div className="text-blue-600 font-bold text-xs">メール対応</div>
-                    <div className="bg-green-100 text-green-600 px-2 py-1 rounded-full text-xs font-medium">24時間</div>
+                    <div className="bg-green-100 text-blue-500 px-2 py-1 rounded-full text-xs font-medium">24時間</div>
                   </div>
                   <div className="text-gray-700 text-xs mt-1">メールでのお問い合わせも承ります</div>
                 </div>
@@ -210,7 +237,7 @@ const ContactPage = () => {
                 <div className="w-full flex-shrink-0">
                   <div className="flex items-center space-x-2">
                     <div className="text-blue-600 font-bold text-xs">訪問相談</div>
-                    <div className="bg-orange-100 text-orange-600 px-2 py-1 rounded-full text-xs font-medium">要予約</div>
+                    <div className="bg-orange-100 text-blue-50 px-2 py-1 rounded-full text-xs font-medium">要予約</div>
                   </div>
                   <div className="text-gray-700 text-xs mt-1">直接お伺いしてのご相談も可能</div>
                 </div>
@@ -273,10 +300,10 @@ const ContactPage = () => {
                 <div className="bg-white rounded-lg p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
                   <div className="text-center">
                     <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                      <Mail className="w-8 h-8 text-green-600" />
+                      <Mail className="w-8 h-8 text-blue-500" />
                     </div>
                     <h3 className="text-xl font-bold text-gray-900 mb-4">メールでのお問い合わせ</h3>
-                    <div className="text-lg font-bold text-green-600 mb-2">info@aegis-llp.com</div>
+                    <div className="text-lg font-bold text-blue-500 mb-2">info@aegis-llp.com</div>
                     <div className="flex items-center justify-center space-x-2 text-gray-600 mb-4">
                       <Clock className="w-4 h-4" />
                       <span className="text-sm">24時間受付</span>
@@ -289,11 +316,11 @@ const ContactPage = () => {
 
                 <div className="bg-white rounded-lg p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
                   <div className="text-center">
-                    <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                      <MapPin className="w-8 h-8 text-orange-600" />
+                    <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                      <MapPin className="w-8 h-8 text-blue-500" />
                     </div>
                     <h3 className="text-xl font-bold text-gray-900 mb-4">ご来社でのご相談</h3>
-                    <div className="text-lg font-bold text-orange-600 mb-2">東京本社</div>
+                    <div className="text-lg font-bold text-blue-500 mb-2">東京本社</div>
                     <div className="flex items-center justify-center space-x-2 text-gray-600 mb-4">
                       <Clock className="w-4 h-4" />
                       <span className="text-sm">要事前予約</span>
@@ -322,7 +349,7 @@ const ContactPage = () => {
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                      お名前 <span className="text-red-500">*</span>
+                      お名前 <span className="text-blue-500">*</span>
                     </label>
                     <input
                       type="text"
@@ -354,7 +381,7 @@ const ContactPage = () => {
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                      メールアドレス <span className="text-red-500">*</span>
+                      メールアドレス <span className="text-blue-500">*</span>
                     </label>
                     <input
                       type="email"
@@ -385,7 +412,7 @@ const ContactPage = () => {
 
                 <div>
                   <label htmlFor="service" className="block text-sm font-medium text-gray-700 mb-2">
-                    お問い合わせ内容 <span className="text-red-500">*</span>
+                    お問い合わせ内容 <span className="text-blue-500">*</span>
                   </label>
                   <select
                     id="service"
@@ -407,7 +434,7 @@ const ContactPage = () => {
 
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                    詳細・ご質問内容 <span className="text-red-500">*</span>
+                    詳細・ご質問内容 <span className="text-blue-500">*</span>
                   </label>
                   <textarea
                     id="message"
